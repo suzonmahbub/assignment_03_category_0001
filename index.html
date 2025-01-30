@@ -20,7 +20,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <style>
       .font-adlam-display {
         font-family: "ADLaM Display", serif;
@@ -30,11 +29,80 @@
         font-family: "Sora", serif;
       }
     </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "bg-primary": "#FFDC26",
+              "bg-primary-light": "#FFF9F4",
+              "bg-secondary": "",
+              "text-primary": "#111111",
+              "text-secondary": "#FFF9F4",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- Header -->
-    <header>
-        
+    <header class="bg-bg-primary-light">
+      <!-- bg light background -->
+      <div class="container mx-auto px-4">
+        <!-- Navbar -->
+        <div class="flex justify-between items-center py-7">
+          <!-- Logo -->
+          <a href="#" class="flex items-center gap-3">
+            <!-- Logo Image -->
+            <div class="w-12 h-12">
+              <img
+                src="./c1-assets/logo-header.png"
+                class="w-full"
+                alt="logo"
+              />
+            </div>
+            <!-- Text -->
+            <h3 class="hidden sm:flex md:hidden lg:flex text-2xl font-sora">
+              Broser<span class="text-yellow-400">4</span>Pets
+            </h3>
+          </a>
+
+          <div class="flex gap-36">
+            <!-- nav -->
+            <div class="hidden xl:flex gap-8 items-center">
+              <a href="#" class="text-xl font-sora capitalize">find a pet</a>
+              <a href="#" class="text-xl font-sora capitalize">breeds</a>
+              <a href="#" class="text-xl font-sora capitalize">contact us</a>
+            </div>
+
+            <!-- Login & Register -->
+            <div class="hidden md:flex items-center gap-4">
+              <button class="text-2xl">
+                <i class="fa-regular fa-bell"></i>
+              </button>
+              <button class="text-2xl">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button
+                class="px-7 py-2.5 text-xl font-sora capitalize border border-yellow-300 rounded-lg"
+              >
+                login
+              </button>
+              <button
+                class="px-7 py-2.5 text-xl font-sora capitalize bg-bg-primary rounded-lg"
+              >
+                register
+              </button>
+            </div>
+            <!-- Menu -->
+            <button class="text-3xl lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+             </button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Main Section -->
