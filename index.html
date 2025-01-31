@@ -28,6 +28,13 @@
       .font-sora {
         font-family: "Sora", serif;
       }
+
+      .banner {
+        background-image: url(./c1-assets/cat-big.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
     </style>
 
     <script>
@@ -39,7 +46,7 @@
               "bg-primary-light": "#FFF9F4",
               "bg-secondary": "",
               "text-primary": "#111111",
-              "text-secondary": "#FFF9F4",
+              "text-secondary": "#585858",
             },
           },
         },
@@ -48,59 +55,86 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="bg-bg-primary-light">
+    <header>
       <!-- bg light background -->
-      <div class="container mx-auto px-4">
-        <!-- Navbar -->
-        <div class="flex justify-between items-center py-7">
-          <!-- Logo -->
-          <a href="#" class="flex items-center gap-3">
-            <!-- Logo Image -->
-            <div class="w-12 h-12">
-              <img
-                src="./c1-assets/logo-header.png"
-                class="w-full"
-                alt="logo"
-              />
-            </div>
-            <!-- Text -->
-            <h3 class="hidden sm:flex md:hidden lg:flex text-2xl font-sora">
-              Broser<span class="text-yellow-400">4</span>Pets
-            </h3>
-          </a>
+      <div class="bg-bg-primary-light border-b sm:border-b-0">
+        <div class="container mx-auto px-4 xl:px-0">
+          <!-- Navbar -->
+          <div class="flex justify-between items-center py-7">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3">
+              <!-- Logo Image -->
+              <div class="w-12 h-12">
+                <img
+                  src="./c1-assets/logo-header.png"
+                  class="w-full"
+                  alt="logo"
+                />
+              </div>
+              <!-- Text -->
+              <h3 class="hidden sm:flex md:hidden lg:flex text-2xl font-sora">
+                Broser<span class="text-yellow-400">4</span>Pets
+              </h3>
+            </a>
 
-          <div class="flex gap-36">
-            <!-- nav -->
-            <div class="hidden xl:flex gap-8 items-center">
-              <a href="#" class="text-xl font-sora capitalize">find a pet</a>
-              <a href="#" class="text-xl font-sora capitalize">breeds</a>
-              <a href="#" class="text-xl font-sora capitalize">contact us</a>
-            </div>
+            <div class="flex gap-36">
+              <!-- nav -->
+              <div class="hidden xl:flex gap-8 items-center">
+                <a href="#" class="text-xl font-sora capitalize">find a pet</a>
+                <a href="#" class="text-xl font-sora capitalize">breeds</a>
+                <a href="#" class="text-xl font-sora capitalize">contact us</a>
+              </div>
 
-            <!-- Login & Register -->
-            <div class="hidden md:flex items-center gap-4">
-              <button class="text-2xl">
-                <i class="fa-regular fa-bell"></i>
-              </button>
-              <button class="text-2xl">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-              <button
-                class="px-7 py-2.5 text-xl font-sora capitalize border border-yellow-300 rounded-lg"
-              >
-                login
-              </button>
-              <button
-                class="px-7 py-2.5 text-xl font-sora capitalize bg-bg-primary rounded-lg"
-              >
-                register
-              </button>
-            </div>
-            <!-- Menu -->
-            <button class="text-3xl lg:hidden">
+              <!-- Login & Register -->
+              <div class="hidden md:flex items-center gap-4">
+                <button class="text-2xl">
+                  <i class="fa-regular fa-bell"></i>
+                </button>
+                <button class="text-2xl">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button
+                  class="px-7 py-2.5 text-xl font-sora capitalize border border-yellow-300 rounded-lg"
+                >
+                  login
+                </button>
+                <button
+                  class="px-7 py-2.5 text-xl font-sora capitalize bg-bg-primary rounded-lg"
+                >
+                  register
+                </button>
+              </div>
+              <!-- Menu -->
+              <button class="text-3xl lg:hidden">
                 <i class="fa-solid fa-bars"></i>
-             </button>
+              </button>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Banner Section -->
+      <div
+        class="banner container mx-auto h-[650px] sm:h-[750px] pt-6 md:pt-20 px-4 xl:px-0"
+      >
+        <!-- Text Content -->
+        <div class="max-w-2xl">
+          <h1
+            class="text-2xl md:text-5xl text-primary font-adlam-display !leading-tight"
+          >
+            Pamper Your Pet,<br />
+            Because They Deserve <br />
+            the Bes
+          </h1>
+          <p class="text-lg sm:text-xl text-secondary mt-4">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button
+            class="px-4 sm:px-7 py-1.5 sm:py-2.5 text-lg sm:text-xl font-sora text-primary bg-bg-primary rounded-lg mt-6"
+          >
+            Find a pet
+          </button>
         </div>
       </div>
     </header>
