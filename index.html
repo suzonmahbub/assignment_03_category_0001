@@ -31,9 +31,6 @@
 
       .banner {
         background-image: url(./c1-assets/cat-big.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
       }
     </style>
 
@@ -115,7 +112,7 @@
 
       <!-- Banner Section -->
       <div
-        class="banner container mx-auto h-[650px] sm:h-[750px] pt-6 md:pt-20 px-4 xl:px-0"
+        class="banner bg-no-repeat bg-bottom bg-contain container mx-auto h-[430px] sm:h-[750px] pt-6 md:pt-20 px-4 xl:px-0"
       >
         <!-- Text Content -->
         <div class="max-w-2xl">
@@ -140,7 +137,120 @@
     </header>
 
     <!-- Main Section -->
-    <main></main>
+    <main>
+      <!-- Categories -->
+      <div class="container mx-auto mt-6 xl:mt-32 px-4 xl:px-0">
+        <h2 class="text-2xl md:text-4xl font-adlam-display capitalize">
+          browse by categories
+        </h2>
+        <!-- Grid Layout -->
+        <div
+          class="mt-6 md:mt-12 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3 lg:gap-6"
+        >
+          <!-- Card 1 -->
+          <div
+            class="bg-bg-primary rounded-xl flex flex-col justify-center items-center md:py-8"
+          >
+            <div
+              class="w-16 md:w-24 h-16 md:h-24 bg-white rounded-full flex justify-center items-center"
+            >
+              <img src="./c1-assets/dog-cartoon.png" alt="dog" />
+            </div>
+            <div class="mt-2 md:mt-6 text-center">
+              <h3 class="text-xl text-primary font-adlam-display capitalize">
+                <dl></dl>
+                dog
+              </h3>
+              <h4 class="font-sora mt-1 md:mt-3">3 items</h4>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-bg-primary rounded-xl flex flex-col justify-center items-center py-8"
+          >
+            <div
+              class="w-16 md:w-24 h-16 md:h-24 bg-white rounded-full flex justify-center items-center"
+            >
+              <img src="./c1-assets/fish-cartoon.png" alt="fish" />
+            </div>
+            <div class="mt-2 md:mt-6 text-center">
+              <h3 class="text-xl text-primary font-adlam-display capitalize">
+                fish
+              </h3>
+              <h4 class="font-sora mt-1 md:mt-3">3 items</h4>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-bg-primary rounded-xl flex flex-col justify-center items-center py-8"
+          >
+            <div
+              class="w-16 md:w-24 h-16 md:h-24 bg-white rounded-full flex justify-center items-center"
+            >
+              <img src="./c1-assets/cat-cartoon.png" alt="cat" />
+            </div>
+            <div class="mt-2 md:mt-6 text-center">
+              <h3 class="text-xl text-primary font-adlam-display capitalize">
+                cat
+              </h3>
+              <h4 class="font-sora mt-1 md:mt-3">3 items</h4>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-bg-primary rounded-xl flex flex-col justify-center items-center py-8"
+          >
+            <div
+              class="w-16 md:w-24 h-16 md:h-24 bg-white rounded-full flex justify-center items-center"
+            >
+              <img src="./c1-assets/bird-cartoon.png" alt="bird" />
+            </div>
+            <div class="mt-2 md:mt-6 text-center">
+              <h3 class="text-xl text-primary font-adlam-display capitalize">
+                bird
+              </h3>
+              <h4 class="font-sora mt-1 md:mt-3">3 items</h4>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="bg-bg-primary rounded-xl flex flex-col justify-center items-center py-8"
+          >
+            <div
+              class="w-16 md:w-24 h-16 md:h-24 bg-white rounded-full flex justify-center items-center"
+            >
+              <img src="./c1-assets/mouse-cartoon.png" alt="small-pet" />
+            </div>
+            <div class="mt-2 md:mt-6 text-center">
+              <h3 class="text-xl text-primary font-adlam-display capitalize">
+                small pet
+              </h3>
+              <h4 class="font-sora mt-1 md:mt-3">3 items</h4>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div
+            class="bg-bg-primary rounded-xl flex flex-col justify-center items-center py-8"
+          >
+            <div
+              class="w-16 md:w-24 h-16 md:h-24 bg-white rounded-full flex justify-center items-center"
+            >
+              <img
+                class="object-cover"
+                src="./c1-assets/rabbit-cartoon.png"
+                alt="rabit"
+              />
+            </div>
+            <div class="mt-2 md:mt-6 text-center">
+              <h3 class="text-xl text-primary font-adlam-display capitalize">
+                rabit
+              </h3>
+              <h4 class="font-sora mt-1 md:mt-3">2 items</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- Footer -->
     <footer></footer>
